@@ -1,0 +1,32 @@
+{
+       "1": {
+        "name" : "first-picture",
+        "cost" : "700",
+        "discription" : " Roses are the antidote to the odorless, tightly bound rosebuds you see at the supermarket flower stand",
+        "imeges" : "flowers/f1.jpg"
+       }
+},
+{
+    "2": {
+     "name" : "Second-picture",
+     "cost" : "730",
+     "discription" : " They grow up to 8 feet tall and 3 feet wide. Hybrid teas aren’t known for being disease resistant",
+     "imeges" : "flowers/f2.jfif"
+    }
+},
+{
+    "3": {
+     "name" : "Third-picture",
+     "cost" : "740",
+     "discription" : "Originating in China, these roses are the O.G. of today’s classic florist rose form.",
+     "imeges" : "flowers/f3.jfif"
+    }
+},
+{
+    "4": {
+     "name" : "Fourth-picture",
+     "cost" : "750",
+     "discription" : " Alyssum or sweet alyssum is a hardy plant that features heat and drought resistance.",
+     "imeges" : "flowers/f4.png"
+    }
+},
