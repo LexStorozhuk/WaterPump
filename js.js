@@ -21,22 +21,39 @@ function close_pop() {
   two.style.display = "none";
   thrid.style.display = "none";
 }
-let about =0;
-function openAbout () {
+let about = 0;
+function openAbout() {
   let one = document.querySelector(".pop_about");
   one.style.display = "block";
 }
-function closeAbout () {
+function closeAbout() {
   ++about;
-  if (about ==2){
+  if (about == 2) {
     let one = document.querySelector(".pop_about");
     one.style.display = "none";
-    about=0;
+    about = 0;
+  }
+}
+function openContacts() {
+  let one = document.querySelector(".button_zero_left");
+  two = document.querySelector (".number");
+  one.style.animation = "zero_left 2s forwards";
+  two.style.display= "block";
+}
+let contact = 0;
+function closeContacts() {
+  ++contact;
+  if (contact == 2) {
+    let one = document.querySelector(".button_zero_left");
+    two = document.querySelector (".number");
+    one.style.animation = " zero_left_zero_position 2s forwards";
+    two.style.display= "none";
+    contact = 0;
   }
 }
 let num = 0,
-numTwo =0,
-numThree =0;
+  numTwo = 0,
+  numThree = 0;
 function openButton() {
   let one = document.querySelector(".png_inside_button");
   one.style.display = "block";
@@ -58,7 +75,7 @@ function openButtonTwo() {
 function openButtonThree() {
   let one = document.querySelector(".png_inside_button_three");
   one.style.display = "block";
-  ++ numThree;
+  ++numThree;
   if (numThree === 2) {
     one.style.display = "none";
     numThree = 0;
