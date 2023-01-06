@@ -35,20 +35,35 @@ function closeAbout() {
   }
 }
 function openContacts() {
+  if (window.innerWidth > 440) {
+
   let one = document.querySelector(".button_zero_left");
-  two = document.querySelector (".number");
+  two = document.querySelector(".number");
   one.style.animation = "zero_left 2s forwards";
-  two.style.display= "block";
+  two.style.display = "block";
+  }
+  if (window.innerWidth < 440) {
+    let one = document.querySelector(".button_zero_lef ");
+    two = document.querySelector(".number");
+    one.style.animation = "zero_left 2s forwards";
+    two.style.display = "flex";
+  }
 }
 let contact = 0;
 function closeContacts() {
   ++contact;
   if (contact == 2) {
     let one = document.querySelector(".button_zero_left");
-    two = document.querySelector (".number");
+    two = document.querySelector(".number");
     one.style.animation = " zero_left_zero_position 2s forwards";
-    two.style.display= "none";
+    two.style.display = "none";
     contact = 0;
+  }
+  if (window.innerWidth<= 440) {
+    let one = document.querySelector(".button_zero_left");
+    two = document.querySelector(".number");
+    one.style.animation = "none";
+    two.style.display = "block";
   }
 }
 let num = 0,
