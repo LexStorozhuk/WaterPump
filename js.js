@@ -4,7 +4,9 @@ function counting() {
   let one = document.querySelector(".wrapper_bottle");
   one.style.display = "block";
   two = document.querySelector(".gradient_break_point");
-  two.style.height = "285%";
+  three = document.querySelector(".gradient_break_point");
+  two.style.height = "590%";
+  two.style.width = "420px";
   if (count > 1) {
     let one = document.querySelector(".wrapper_bottle");
     two = document.querySelector(".gradient_break_point");
@@ -56,7 +58,7 @@ function openContacts() {
 let contact = 0;
 function closeContacts() {
   ++contact;
-  if ((contact == 2, window.innerWidth > 430)) {
+  if ((contact == 2, window.innerWidth > 440)) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
     one.style.animation = "zero_left_zero_position 2s forwards";
@@ -76,6 +78,7 @@ let num = 0,
   numThree = 0;
 function openButton() {
   let one = document.querySelector(".png_inside_button");
+ 
   one.style.display = "block";
   ++num;
   if (num === 2) {
@@ -94,10 +97,13 @@ function openButtonTwo() {
 }
 function openButtonThree() {
   let one = document.querySelector(".png_inside_button_three");
+  two=document.querySelector (".button_zero_left");
   one.style.display = "block";
+  two.style.border = "none"
   ++numThree;
   if (numThree === 2) {
     one.style.display = "none";
+    two.style.border = "solid 1px white"
     numThree = 0;
   }
 }
