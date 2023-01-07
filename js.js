@@ -3,9 +3,13 @@ function counting() {
   count++;
   let one = document.querySelector(".wrapper_bottle");
   one.style.display = "block";
+  two = document.querySelector(".gradient_break_point");
+  two.style.height = "285%";
   if (count > 1) {
     let one = document.querySelector(".wrapper_bottle");
+    two = document.querySelector(".gradient_break_point");
     one.style.display = "none";
+    two.style.height = "100%";
     count = 0;
   }
 }
@@ -17,6 +21,7 @@ function close_pop() {
   let one = document.querySelector(".pop_full");
   two = document.querySelector(".button_forward");
   thrid = document.querySelector(".button_back");
+
   one.style.display = "none";
   two.style.display = "none";
   thrid.style.display = "none";
@@ -36,34 +41,34 @@ function closeAbout() {
 }
 function openContacts() {
   if (window.innerWidth > 440) {
-
-  let one = document.querySelector(".button_zero_left");
-  two = document.querySelector(".number");
-  one.style.animation = "zero_left 2s forwards";
-  two.style.display = "block";
-  }
-  if (window.innerWidth < 440) {
-    let one = document.querySelector(".button_zero_lef ");
+    let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
     one.style.animation = "zero_left 2s forwards";
-    two.style.display = "flex";
+    two.style.display = "block";
+  }
+  if (window.innerWidth < 440) {
+    let one = document.querySelector(".button_zero_left");
+    two = document.querySelector(".number");
+    one.style.animation = "none";
+    two.style.display = "block";
   }
 }
 let contact = 0;
 function closeContacts() {
   ++contact;
-  if (contact == 2) {
+  if ((contact == 2, window.innerWidth > 430)) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
-    one.style.animation = " zero_left_zero_position 2s forwards";
+    one.style.animation = "zero_left_zero_position 2s forwards";
     two.style.display = "none";
     contact = 0;
   }
-  if (window.innerWidth<= 440) {
+  if ((window.innerWidth < 440, contact == 2)) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
     one.style.animation = "none";
-    two.style.display = "block";
+    two.style.display = "none";
+    contact = 0;
   }
 }
 let num = 0,

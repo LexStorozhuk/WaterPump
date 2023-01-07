@@ -9,7 +9,7 @@
     <script src="js.js"></script>
   </head>
   <body>
-    <div class="gradient"></div>
+    <div class="gradient gradient_break_point "></div>
     <div class="nav_bar">
       <ul>
         <button class="button_zero" onclick="counting();openButton()">
@@ -38,38 +38,7 @@
     </div>
     <div class="intro">
       <video src="Bubbles.mp4" muted loop autoplay></video>
-      <div class="wrapper_bottle">
-        <div class="grid_body">
-          <div class="bottle1">
-            <img src="1.png" alt="" onclick="fullImg(); imgId1()" />
-          </div>
-          <div class="bottle2" onclick="fullImg(); imgId2()">
-            <img src="2.jfif" alt="" />
-          </div>
-          <div class="bottle3" onclick="fullImg(); imgId3()">
-            <img src="3.png" alt="" />
-          </div>
-          <div class="bottle4" onclick="fullImg(); imgId4()">
-            <img src="4.jfif" alt="" />
-          </div>
-          <div class="about">
-            <p class="text_about">
-              Water pump is BPA free drinking water dispenser, food grade
-              silicone hose, 304 stainless steel, high density ABS plastic, no
-              toxic, and no smell. Built in rechargeable 1200mAh battery. Can
-              used for 30-40 days or around 4-6 bottles of 5 gallon water once
-              full charged. The electric pumping device suitable for pure
-              bottled drinking water, suitable for a variety of models gallon
-              barrel without pry the lid. Note: The drinking water pump is
-              suitable for gallon barrels with a 2.16-inch (5.5cm) neck. Please
-              confirm the size of your neck before purchasing.
-            </p>
-            <p class="text_price">
-              <button class="button_buy">Buy:50$</button>
-            </p>
-          </div>
-        </div>
-      </div>
+      
     </div>
     <button class="pop_full" onclick="close_pop()">
       <div class="img_inside_pop">
@@ -83,12 +52,44 @@
       </button>
     </button>
     <div class="pop_about" onclick="closeAbout()">
-      <p>
+      <p class="pop_about_text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rem,
         laborum recusandae praesentium minus dolore debitis provident enim nam
         id! Voluptate dolor modi facilis quas odit sunt dignissimos consequatur
         aliquam!
       </p>
+    </div>
+    <div class="wrapper_bottle">
+      <div class="grid_body">
+        <div class="bottle2" onclick="fullImg(); imgId2()">
+          <img src="2.jfif" alt="" />
+        </div>
+        <div class="bottle1">
+          <img src="1.png" alt="" onclick="fullImg(); imgId1()" />
+        </div>
+        <div class="bottle3" onclick="fullImg(); imgId3()">
+          <img src="3.png" alt="" />
+        </div>
+        <div class="bottle4" onclick="fullImg(); imgId4()">
+          <img src="4.jfif" alt="" />
+        </div>
+        <div class="about">
+          <p class="text_about">
+            Water pump is BPA free drinking water dispenser, food grade
+            silicone hose, 304 stainless steel, high density ABS plastic, no
+            toxic, and no smell. Built in rechargeable 1200mAh battery. Can
+            used for 30-40 days or around 4-6 bottles of 5 gallon water once
+            full charged. The electric pumping device suitable for pure
+            bottled drinking water, suitable for a variety of models gallon
+            barrel without pry the lid. Note: The drinking water pump is
+            suitable for gallon barrels with a 2.16-inch (5.5cm) neck. Please
+            confirm the size of your neck before purchasing.
+          </p>
+          <p class="text_price">
+            <button class="button_buy">Buy:50$</button>
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
