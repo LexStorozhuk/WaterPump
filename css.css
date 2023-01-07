@@ -560,7 +560,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: -2%;
+    top: 2%;
     left: 0.5%;
     font-size: 30px;
     border-radius: 20%;
@@ -600,9 +600,9 @@ ul {
   .img_inside_pop {
     width: 400px;
     height: 500px;
-    position: absolute;
-    top: 12%;
-    left: calc(50% - 200px);
+    position: fixed;
+    top: calc(50% - 250px);
+    left:10px;
     transform: rotateX("100");
     z-index: 6;
   }
@@ -612,5 +612,41 @@ ul {
     transition: 1.5s;
     animation: flip 0.5s;
     box-shadow: 0 0 70px rgba(246, 245, 245, 0.275);
+  }
+  .bottle3:hover ~ .about {
+    transition: 1.5s;
+    transform: translateX(5px);
+    opacity: 1;
+    cursor: pointer;
+  }
+  .bottle4:hover ~ .about {
+    transition: 1.5s;
+    transform: translateX(5px);
+    opacity: 1;
+    cursor: pointer;
+  }
+  .bottle1:active {
+    transition: 1.5s;
+    transform: translateX(-5px) translateY(-5px);
+    opacity: 1;
+    cursor: pointer;
+  }
+  .bottle2:active {
+    transition: 1.5s;
+    transform: translateX(5px) translateY(-5px);
+    opacity: 1;
+    cursor: pointer;
+  }
+  .bottle3:active {
+    transition: 1.5s;
+    transform: translateX(-5px) translateY(5px);
+    opacity: 1;
+    cursor: pointer;
+  }
+  .bottle4:active {
+    transition: 1.5s;
+    transform: translateX(5px) translateY(5px);
+    opacity: 1;
+    cursor: pointer;
   }
 }
