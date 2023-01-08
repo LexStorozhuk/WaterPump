@@ -9,24 +9,41 @@
     <script src="js.js"></script>
   </head>
   <body>
-    <div class="gradient gradient_break_point "></div>
+    <div class="gradient gradient_break_point"></div>
     <div class="nav_bar">
       <ul>
         <button class="button_zero" onclick="counting();openButton()">
-          Product
-          <div class="png_inside_button">
-            <img src="next.png" alt="" />
+          <div class="button_zero_left_inside">
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+            Product
+            <div class="png_inside_button">
+              <img src="next.png" alt="" />
+            </div>
           </div>
         </button>
-        <button class="button_zero" onclick="openButtonTwo(); openAbout(); closeAbout()">
+        <button
+          class="button_zero"
+          onclick="openButtonTwo(); openAbout(); closeAbout()"
+        >
+        <div class="button_zero_left_inside_two">
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
           About us
           <div class="png_inside_button_two">
             <img src="next.png" alt="" />
           </div>
+        </div>
         </button>
-        <button class="button_zero_left" onclick="openButtonThree();openContacts();closeContacts()">
-          <div class="button_zero_left_inside ">
-
+        <button
+          class="button_zero_left"
+          onclick="openButtonThree();openContacts();closeContacts()"
+        >
+          <div class="button_zero_left_inside_three">
             <span class="top"></span>
             <span class="right"></span>
             <span class="bottom"></span>
@@ -45,7 +62,9 @@
     </div>
     <div class="intro">
       <video src="Bubbles.mp4" muted loop autoplay></video>
-      
+    </div>
+    <div id="two" class="intro_two">
+      <video src="Bubbles.mp4" muted loop autoplay></video>
     </div>
     <button class="pop_full" onclick="close_pop()">
       <div class="img_inside_pop">
@@ -82,15 +101,15 @@
         </div>
         <div class="about">
           <p class="text_about">
-            Water pump is BPA free drinking water dispenser, food grade
-            silicone hose, 304 stainless steel, high density ABS plastic, no
-            toxic, and no smell. Built in rechargeable 1200mAh battery. Can
-            used for 30-40 days or around 4-6 bottles of 5 gallon water once
-            full charged. The electric pumping device suitable for pure
-            bottled drinking water, suitable for a variety of models gallon
-            barrel without pry the lid. Note: The drinking water pump is
-            suitable for gallon barrels with a 2.16-inch (5.5cm) neck. Please
-            confirm the size of your neck before purchasing.
+            Water pump is BPA free drinking water dispenser, food grade silicone
+            hose, 304 stainless steel, high density ABS plastic, no toxic, and
+            no smell. Built in rechargeable 1200mAh battery. Can used for 30-40
+            days or around 4-6 bottles of 5 gallon water once full charged. The
+            electric pumping device suitable for pure bottled drinking water,
+            suitable for a variety of models gallon barrel without pry the lid.
+            Note: The drinking water pump is suitable for gallon barrels with a
+            2.16-inch (5.5cm) neck. Please confirm the size of your neck before
+            purchasing.
           </p>
           <p class="text_price">
             <button class="button_buy">Buy:50$</button>

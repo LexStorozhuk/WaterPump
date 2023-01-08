@@ -1,3 +1,21 @@
+let scrl=1;
+window.onscroll = function() { 
+  document.getElementById("two").classList.add('intro_two');
+  if (window.innerWidth < 440){
+    let one = document.querySelector(".intro_two");
+    one.style.display = "block";
+  }
+}
+function blue() {
+
+}
+// window.onload = function () {
+//   window.onscroll = function () {
+//     if (document.body.scrollTop > 30) {
+//       document.getElementById("two").class = "intro_two";
+//     }
+//   };
+// };
 let count = 0;
 function counting() {
   count++;
@@ -5,8 +23,10 @@ function counting() {
   one.style.display = "block";
   two = document.querySelector(".gradient_break_point");
   three = document.querySelector(".gradient_break_point");
+  fourth = document.querySelector(".button_zero_left_inside");
   two.style.height = "590%";
-  two.style.width = "420px";
+  three.style.width = "420px";
+  fourth.style.border ="none"
   if (count > 1) {
     let one = document.querySelector(".wrapper_bottle");
     two = document.querySelector(".gradient_break_point");
@@ -31,13 +51,31 @@ function close_pop() {
 let about = 0;
 function openAbout() {
   let one = document.querySelector(".pop_about");
+  two = document.querySelector(".button_zero_left_inside_two");
+  
   one.style.display = "block";
+  two.style.border ="none"
+
+  if (about == 0){
+    let one = document.querySelector(".bottle2 img");
+    two = document.querySelector(".grid_body");
+
+    two.style.top ="-120px"
+    one.style.visibility ="hidden"
+  }
 }
 function closeAbout() {
   ++about;
   if (about == 2) {
     let one = document.querySelector(".pop_about");
+    two = document.querySelector(".pop_about");
+    three = document.querySelector(".grid_body");
+    fourth = document.querySelector(".bottle2 img");
+
     one.style.display = "none";
+    two.style.top ="100px"
+    three.style.top ="40px"
+    fourth.style.visibility ="visible"
     about = 0;
   }
 }
@@ -45,14 +83,21 @@ function openContacts() {
   if (window.innerWidth > 440) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
+
     one.style.animation = "zero_left 2s forwards";
     two.style.display = "block";
+
   }
   if (window.innerWidth < 440) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
+    three = document.querySelector(".nav_bar");
+    fourth = document.querySelector(".button_zero_left_inside_three");
+    fourth.style.border ="none"
+
     one.style.animation = "none";
-    two.style.display = "block";
+    two.style.display = "flex";
+    three.style.height ="105px"
   }
 }
 let contact = 0;
@@ -68,8 +113,10 @@ function closeContacts() {
   if ((window.innerWidth < 440, contact == 2)) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
+    three = document.querySelector(".nav_bar");
     one.style.animation = "none";
     two.style.display = "none";
+    three.style.height ="90px"
     contact = 0;
   }
 }
@@ -103,7 +150,7 @@ function openButtonThree() {
   ++numThree;
   if (numThree === 2) {
     one.style.display = "none";
-    two.style.border = "solid 1px white"
+    // two.style.border = "solid 1px white"
     numThree = 0;
   }
 }
