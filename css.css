@@ -4,6 +4,7 @@ body {
   overflow-x: hidden;
   outline: none;
   border-radius: 2rem;
+  background: rgb(22, 84, 132);
 }
 .nav_bar {
   width: 100%;
@@ -114,7 +115,7 @@ ul {
   /* background: rgba(0, 0, 0, 0.637); */
   display: none;
   position: absolute;
-  top: 105px;
+  top: 115px;
   left: calc(50% - 600px);
   transition: 1s;
 }
@@ -522,7 +523,7 @@ a {
   font-size: 30px;
   padding: 10px;
 }
-.Bubbles_fast {
+.bubbles_fast {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -532,7 +533,7 @@ a {
   animation: bubbles-fast 3s infinite ease-out;
   display: none;
 }
-.Bubbles_fast_two {
+.bubbles_fast_two {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -542,7 +543,7 @@ a {
   animation: bubbles-fast-two 3s infinite ease-out;
   display: none;
 }
-.Bubbles {
+.bubbles {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -552,7 +553,7 @@ a {
   animation: bubbles 5s infinite ease-out;
   display: none;
 }
-.Bubbles_one {
+.bubbles_one {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -563,7 +564,7 @@ a {
   Transition-delay: 1s;
   display: none;
 }
-.Bubbles_two {
+.bubbles_two {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -574,7 +575,7 @@ a {
   Transition-delay: 2s;
   display: none;
 }
-.Bubbles_three {
+.bubbles_three {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -585,7 +586,7 @@ a {
   Transition-delay: 3s;
   display: none;
 }
-.Bubbles_fourth {
+.bubbles_fourth {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -596,7 +597,7 @@ a {
   Transition-delay: 2s;
   display: none;
 }
-.Bubbles_fifth {
+.bubbles_fifth {
   width: 420px;
   height: 420px;
   position: absolute;
@@ -608,75 +609,29 @@ a {
   display: none;
 }
 @media (max-width: 420px) {
-  .Bubbles_fast {
-    width: 420px;
-    height: 420px;
-    position: absolute;
-    top: 500px;
-    left: 0px;
-    z-index: 2;
-    animation: bubbles-fast 3s infinite ease-out;
-  }
-  .Bubbles_fast_two {
+
+  .bubbles {
     width: 420px;
     height: 420px;
     position: absolute;
     top: 1600px;
     left: 0px;
     z-index: 2;
-    animation: bubbles-fast-two 3s infinite ease-out;
-    display: none;
+    animation: bubbles 6s infinite ease-out;
+    display: block;
   }
-  .Bubbles {
-    width: 420px;
-    height: 420px;
-    position: absolute;
-    top: 1600px;
-    left: 0px;
-    z-index: 2;
-    animation: bubbles 5s infinite ease-out;
-  }
-  .Bubbles_one {
+  .bubbles_one {
     width: 420px;
     height: 420px;
     position: absolute;
     top: 1370px;
     left: 0px;
     z-index: 2;
-    animation: bubbles-two 5s infinite ease-in-out;
-    Transition-delay: 1s;
+    animation: bubbles-two 6s infinite ease-in;
+    animation-delay: 1s;
+    display: block;
   }
-  .Bubbles_two {
-    width: 420px;
-    height: 420px;
-    position: absolute;
-    top: 1300px;
-    left: 0px;
-    z-index: 2;
-    animation: bubbles-three 6s infinite ease-in-out;
-    Transition-delay: 2s;
-  }
-  .Bubbles_three {
-    width: 420px;
-    height: 420px;
-    position: absolute;
-    top: 1600px;
-    left: 0px;
-    z-index: 2;
-    animation: bubbles 5s infinite ease-out ;
-    Transition-delay: 3s;
-  }
-  .Bubbles_fourth {
-    width: 420px;
-    height: 420px;
-    position: absolute;
-    top: 1370px;
-    left: 0px;
-    z-index: 2;
-    animation: bubbles-two 5s infinite ease-in-out;
-    Transition-delay: 2s;
-  }
-  .Bubbles_fifth {
+  .bubbles_two {
     width: 420px;
     height: 420px;
     position: absolute;
@@ -684,18 +639,123 @@ a {
     left: 0px;
     z-index: 2;
     animation: bubbles-three 6s infinite ease-in;
-    Transition-delay: 3s;
+    animation-delay: 2s;
+    display: block;
   }
-  .Bubbles_fast,
-  .Bubbles img,
-  .Bubbles_one,
-  .Bubbles_two img,
-  .Bubbles_three img,
-  .Bubbles_fourth img,
-  .Bubbles_fifth img {
+  .bubbles_three {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles 6s infinite ease-in ;
+    animation-delay: 3s;
+    display: block;
+  }
+  .bubbles_fourth {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1370px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-two 6s infinite ease-in;
+    animation-delay: 4s;
+  }
+  .bubbles_fifth {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1300px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-three 5s infinite ease-in;
+    animation-delay: 5s;
+    display: block;
+  }
+  .bubbles_back_one {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-two 9s infinite ease-in-out;
+    display: block;
+  } 
+   .bubbles_back_two{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-two 9s infinite ease-in-out;
+    animation-delay: 1s;
+    display: block;
+  }
+    .bubbles_back_three{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-two 9s infinite ease-in-out;
+    animation-delay: 2s;
+    display: block;
+  }
+    .bubbles_back_fourth{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-two 9s infinite ease-in-out;
+    animation-delay: 3s;
+    display: block;
+  }
+    .bubbles_back_fifth{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-two 9s infinite ease-in-out;
+    animation-delay: 4s;
+    display: block;
+  }
+    .bubbles_back_sixth{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    z-index: 2;
+    animation: bubbles-two 9s infinite ease-in-out;
+    animation-delay: 5s;
+    display: block;
+  }
+  .bubbles_back_one img,
+  .bubbles_back_two img,
+  .bubbles_back_three img,
+  .bubbles_back_fourth img,
+  .bubbles_back_fifth img,
+  .bubbles_back_sixth img,
+  .bubbles_fast img,
+  .bubbles img,
+  .bubbles_one img,
+  .bubbles_two img,
+  .bubbles_three img,
+  .bubbles_fourth img,
+  .bubbles_fifth img {
     width: 420px;
     height: 420px;
   }
+
   @keyframes bubbles-fast {
     0% {
     }
@@ -733,19 +793,20 @@ a {
   }
   .background {
     width: 420px;
-    height: 2010px;
+    height: 2020px;
     background: black;
     display: block;
     position: absolute;
     left: 0px;
-    bottom: -30px;
+    top: 0px;
     z-index: 1;
     margin: 0;
     padding: 0;
   }
   .background img {
     width: 420px;
-    height: 2010px;
+    height: 2020px;
+    
   }
   .button_buy {
     width: 150px;
@@ -1002,7 +1063,7 @@ a {
     transition: 2s;
   }
   .nav_bar {
-    width: 100%;
+    width: 420px;
     height: 90px;
     background: rgba(0, 0, 0, 0.54);
     position: absolute;

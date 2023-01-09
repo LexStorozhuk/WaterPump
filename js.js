@@ -28,7 +28,7 @@ function counting() {
     let two = document.querySelector(".wrapper_bottle");
     three = document.querySelector(".button_zero_left_inside")
     two.style.display = "none";
-    three.style.border = "1px solid white";
+    three.style.border = "solid 1px white";
   }
   if (window.innerWidth > 440) {
     one = document.querySelector(".button_zero_left_inside");
@@ -70,20 +70,20 @@ function closeAbout() {
   if (about == 2) {
     let one = document.querySelector(".pop_about");
     fourth = document.querySelector(".bottle2");
-    two = document.querySelector(".wrapper_bottle");
     fifth = document.querySelector(".button_zero_left_inside_two");
 
     one.style.display = "none";
-    two.style.top = "90px";
     fourth.style.display = "block";
     fifth.style.border = "1px solid white";
     about = 0;
   }
   if (window.innerWidth > 440) {
     one = document.querySelector(".button_zero_left_inside_two");
-    three = document.querySelector(".grid_body");
     one.style.border = " none";
-    three.style.top = "90px";
+  }
+  if (window.innerWidth < 440) {
+    two = document.querySelector(".wrapper_bottle");
+    two.style.top = "90px";
   }
 }
 function openContacts() {
