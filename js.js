@@ -1,14 +1,14 @@
-let scrl=1;
-window.onscroll = function() { 
-  document.getElementById("two").classList.add('intro_two');
-  if (window.innerWidth < 440){
-    let one = document.querySelector(".intro_two");
-    one.style.display = "block";
-  }
-}
-function blue() {
+// let scrl=1;
+// window.onscroll = function() {
+//   document.getElementById("two").classList.add('intro_two');
+//   if (window.innerWidth < 440){
+//     let one = document.querySelector(".intro_two");
+//     one.style.display = "block";
+//   }
+// }
+// function blue() {
 
-}
+// }
 // window.onload = function () {
 //   window.onscroll = function () {
 //     if (document.body.scrollTop > 30) {
@@ -20,20 +20,21 @@ let count = 0;
 function counting() {
   count++;
   let one = document.querySelector(".wrapper_bottle");
-  one.style.display = "block";
-  two = document.querySelector(".gradient_break_point");
-  three = document.querySelector(".gradient_break_point");
   fourth = document.querySelector(".button_zero_left_inside");
-  two.style.height = "590%";
-  three.style.width = "420px";
-  fourth.style.border ="none"
+  one.style.display = "block";
+  fourth.style.border = "none";
   if (count > 1) {
-    let one = document.querySelector(".wrapper_bottle");
-    two = document.querySelector(".gradient_break_point");
-    one.style.display = "none";
-    two.style.height = "100%";
     count = 0;
+    let two = document.querySelector(".wrapper_bottle");
+    three = document.querySelector(".button_zero_left_inside")
+    two.style.display = "none";
+    three.style.border = "1px solid white";
   }
+  if (window.innerWidth > 440) {
+    one = document.querySelector(".button_zero_left_inside");
+    one.style.border = "none";
+  }
+  
 }
 function fullImg() {
   let one = document.querySelector(".pop_full");
@@ -52,31 +53,37 @@ let about = 0;
 function openAbout() {
   let one = document.querySelector(".pop_about");
   two = document.querySelector(".button_zero_left_inside_two");
-  
+
   one.style.display = "block";
-  two.style.border ="none"
+  two.style.border = "none";
 
-  if (about == 0){
-    let one = document.querySelector(".bottle2 img");
-    two = document.querySelector(".grid_body");
+  if (window.innerWidth < 440) {
+    let one = document.querySelector(".bottle2");
+    three = document.querySelector(".wrapper_bottle");
 
-    two.style.top ="-120px"
-    one.style.visibility ="hidden"
+    one.style.display = "none";
+    three.style.top = "210px";
   }
 }
 function closeAbout() {
   ++about;
   if (about == 2) {
     let one = document.querySelector(".pop_about");
-    two = document.querySelector(".pop_about");
-    three = document.querySelector(".grid_body");
-    fourth = document.querySelector(".bottle2 img");
+    fourth = document.querySelector(".bottle2");
+    two = document.querySelector(".wrapper_bottle");
+    fifth = document.querySelector(".button_zero_left_inside_two");
 
     one.style.display = "none";
-    two.style.top ="100px"
-    three.style.top ="40px"
-    fourth.style.visibility ="visible"
+    two.style.top = "90px";
+    fourth.style.display = "block";
+    fifth.style.border = "1px solid white";
     about = 0;
+  }
+  if (window.innerWidth > 440) {
+    one = document.querySelector(".button_zero_left_inside_two");
+    three = document.querySelector(".grid_body");
+    one.style.border = " none";
+    three.style.top = "90px";
   }
 }
 function openContacts() {
@@ -85,38 +92,51 @@ function openContacts() {
     two = document.querySelector(".number");
 
     one.style.animation = "zero_left 2s forwards";
-    two.style.display = "block";
-
+    two.style.display = "flex";
   }
   if (window.innerWidth < 440) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
     three = document.querySelector(".nav_bar");
     fourth = document.querySelector(".button_zero_left_inside_three");
-    fourth.style.border ="none"
-
+    
     one.style.animation = "none";
     two.style.display = "flex";
-    three.style.height ="105px"
+    three.style.height = "105px";
+    fourth.style.border = "none";
   }
 }
-let contact = 0;
+let contact = 0,
+contactSize = 0;
+
 function closeContacts() {
   ++contact;
-  if ((contact == 2, window.innerWidth > 440)) {
+
+  if (( window.innerWidth > 440)) {
     let one = document.querySelector(".button_zero_left");
-    two = document.querySelector(".number");
     one.style.animation = "zero_left_zero_position 2s forwards";
-    two.style.display = "none";
-    contact = 0;
   }
-  if ((window.innerWidth < 440, contact == 2)) {
+  if (window.innerWidth < 440) {
+    ++contactSize;
+  }
+  if (( contactSize == 2)) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
     three = document.querySelector(".nav_bar");
+    fourth = document.querySelector(".button_zero_left_inside_three");
     one.style.animation = "none";
     two.style.display = "none";
-    three.style.height ="90px"
+    three.style.height = "90px";
+    fourth.style.border = "1px solid white";
+    contactSize = 0;
+  }
+  if (window.innerWidth > 440, contact == 2) {
+   let one = document.querySelector(".button_zero_left_inside_three");
+   two = document.querySelector(".number");
+   three = document.querySelector(".button_zero_left");
+    one.style.border = "none";
+    two.style.display = "none";
+    three.style.animation = "none"
     contact = 0;
   }
 }
@@ -125,7 +145,7 @@ let num = 0,
   numThree = 0;
 function openButton() {
   let one = document.querySelector(".png_inside_button");
- 
+
   one.style.display = "block";
   ++num;
   if (num === 2) {
@@ -144,9 +164,9 @@ function openButtonTwo() {
 }
 function openButtonThree() {
   let one = document.querySelector(".png_inside_button_three");
-  two=document.querySelector (".button_zero_left");
+  two = document.querySelector(".button_zero_left");
   one.style.display = "block";
-  two.style.border = "none"
+  two.style.border = "none";
   ++numThree;
   if (numThree === 2) {
     one.style.display = "none";
