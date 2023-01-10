@@ -13,7 +13,8 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 2;
+  z-index: 4;
+  transition: 0.5s;
 }
 ul {
   display: flex;
@@ -1069,7 +1070,8 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 5;
+    z-index: 4;
+    margin-bottom: 10px;
   }
   /* .button_zero_left:active ,.button_zero:active, .nav_bar:active {
     border: none;
@@ -1173,9 +1175,9 @@ a {
     height: 1900px;
     display: block;
     position: absolute;
-    top: 90px;
+    top: 97px;
     left: 0px;
-    transition: 1s;
+    transition: 5s;
   }
   .grid_body {
     width: 400px;
@@ -1191,6 +1193,9 @@ a {
     position: absolute;
     z-index: 2;
     margin-top: 5px;
+    transition: 1s;
+  opacity: 0;
+
   }
   .about {
     width: 400px;
