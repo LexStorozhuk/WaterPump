@@ -1177,7 +1177,7 @@ a {
     position: absolute;
     top: 97px;
     left: 0px;
-    transition: 5s;
+    transition: 1s;
   }
   .grid_body {
     width: 400px;
@@ -1194,7 +1194,6 @@ a {
     z-index: 2;
     margin-top: 5px;
     transition: 1s;
-  opacity: 0;
 
   }
   .about {
