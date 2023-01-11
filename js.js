@@ -113,12 +113,18 @@ function closeAbout() {
   }
 }
 function openContacts() {
-  if (window.innerWidth > 440) {
+  if (window.innerWidth > 844) {
     let one = document.querySelector(".button_zero_left");
     two = document.querySelector(".number");
 
     one.style.animation = "zero_left 2s forwards";
     two.style.display = "flex";
+  }
+  if (window.innerWidth > 440 && window.innerWidth < 845) {
+    let one = document.querySelector(".button_zero_left");
+    two = document.querySelector(".number");
+    setTimeout(()=>{two.style.display = "flex";},1800)
+    one.style.animation = "zero_left_zero_position 2s forwards";
   }
   if (window.innerWidth < 440) {
     let one = document.querySelector(".button_zero_left");
@@ -147,10 +153,6 @@ function closeContacts() {
   ++contact;
   if (window.innerWidth < 440) {
     ++contactSize;
-  }
-  if (window.innerWidth > 440) {
-    let one = document.querySelector(".button_zero_left");
-    one.style.animation = "zero_left_zero_position 2s forwards";
   }
   if (contactSize == 2) {
     contactSize = 0;
