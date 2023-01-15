@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, height=device-hright, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title>Water</title>
     <link rel="stylesheet" href="css.css" />
     <script src="js.js"></script>
@@ -50,6 +50,7 @@
       <img src="bubbles-one.png" alt="">
     </div>
     <div class="nav_bar">
+      <ul>
         <button class="button_zero" onclick="counting();openButton()">
           <div class="button_zero_left_inside">
             <span class="top"></span>
@@ -93,13 +94,16 @@
           </div>
         </button>
         <div class="number" >
-          <a href="tel:+3809785175950">0978517595</a>
-          <a href="mailto: sasha0878@yahoo.com">sasha0878@yahoo.com</a>
+            <a href="tel:+3809785175950">0978517595</a>
+            <a href="mailto: sasha0878@yahoo.com">sasha0878@yahoo.com</a>
         </div>
-
+      </ul>
     </div>
     <div class="intro">
-      <video class="video"  src="Bubbles.mp4" muted loop autoplay></video>
+      <video  src="Bubbles.mp4" muted loop autoplay></video>
+    </div>
+    <div id="two" class="intro_two">
+      <video src="Bubbles.mp4" muted loop autoplay></video>
     </div>
     <button class="pop_full" onclick="closePop()">
       <div class="img_inside_pop">
@@ -135,25 +139,60 @@
           <img src="4.jfif" alt="" />
         </div>
         <div class="about">
-          <div class="about_inside">
-            
-            <p class="text_about">
-              Water pump is BPA free drinking water dispenser, food grade silicone
-              hose, 304 stainless steel, high density ABS plastic, no toxic, and
-              no smell. Built in rechargeable 1200mAh battery. Can used for 30-40
-              days or around 4-6 bottles of 5 gallon water once full charged. The
-              electric pumping device suitable for pure bottled drinking water,
-              suitable for a variety of models gallon barrel without pry the lid.
-              Note: The drinking water pump is suitable for gallon barrels with a
-              2.16-inch (5.5cm) neck. Please confirm the size of your neck before
-              purchasing.
-            </p>
-              <button class="button_buy">
-                Buy:50$
-              </button>
-          </div>
+          <p class="text_about">
+            Water pump is BPA free drinking water dispenser, food grade silicone
+            hose, 304 stainless steel, high density ABS plastic, no toxic, and
+            no smell. Built in rechargeable 1200mAh battery. Can used for 30-40
+            days or around 4-6 bottles of 5 gallon water once full charged. The
+            electric pumping device suitable for pure bottled drinking water,
+            suitable for a variety of models gallon barrel without pry the lid.
+            Note: The drinking water pump is suitable for gallon barrels with a
+            2.16-inch (5.5cm) neck. Please confirm the size of your neck before
+            purchasing.
+          </p>
+            <button class="button_buy">
+              Buy:50$
+            </button>
         </div>
       </div>
     </div>
-  </body>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>
