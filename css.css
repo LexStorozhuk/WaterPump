@@ -659,15 +659,6 @@ a {
   animation-delay: 5s;
   display: none;
 }
-.cover {
-  width: 420px;
-  height: 2020px;
-  background: black;
-  display: none;
-  position: absolute;
-  opacity: 0.3;
-  z-index: 2;
-}
 @media (max-width: 1323px) {
   .wrapper_bottle {
     width: 68%;
@@ -675,7 +666,6 @@ a {
     display: block;
     transition: 1s;
     margin: 80px 5px 0 20px;
-    background: black;
     padding: 15px;
     box-sizing: border-box;
   }
@@ -748,7 +738,6 @@ a {
     display: block;
     transition: 1s;
     margin: 80px 5px 0 20px;
-    background: black;
     padding: 15px;
     box-sizing: border-box;
   }
@@ -811,7 +800,6 @@ a {
     display: block;
     transition: 1s;
     margin: 80px 5px 0 20px;
-    background: black;
     padding: 15px;
     box-sizing: border-box;
   }
@@ -874,7 +862,6 @@ a {
     display: block;
     transition: 1s;
     margin: 80px 5px 0 0px;
-    background: black;
     padding: 15px;
     box-sizing: border-box;
   }
@@ -964,7 +951,6 @@ a {
     display: block;
     transition: 1s;
     margin: 80px 5px 5px 5px;
-    background: black;
     padding: 15px;
     box-sizing: unset;
   }
@@ -1077,7 +1063,6 @@ a {
     display: block;
     transition: 1s;
     margin: 80px 5px 5px 5px;
-    background: black;
     padding: 15px;
     box-sizing: unset;
   }
@@ -1160,7 +1145,6 @@ a {
     display: block;
     transition: 1s;
     margin: 80px 5px 5px 5px;
-    background: black;
     padding: 15px;
   }
   .grid_body {
@@ -1735,7 +1719,6 @@ a {
     display: block;
     transition: 1s;
     margin: 0;
-    background: black;
     position: absolute;
     left: calc(50% - 187.5px);
     top: 140px;
