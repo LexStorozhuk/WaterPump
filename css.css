@@ -1212,6 +1212,7 @@ a {
 @media (max-width: 420px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
   .bubbles {
     width: 100%;
