@@ -1181,13 +1181,13 @@ a {
 
 @media (max-width: 420px) {
   body {
+    background-image: url(/water.JPG);
     max-width: 2000px;
     max-height: 1024px;
     margin: 0px;
     padding: 0px;
     outline: none;
     border-radius: 2rem;
-    background: navy;
     overflow: unset;
     overflow-x:hidden ;
     overflow-y: scroll;
