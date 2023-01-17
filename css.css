@@ -663,6 +663,18 @@ a {
   display: none;
 }
 @media (max-width: 1323px) {
+  body {
+    background-image: url(/water.JPG);
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    overflow: unset;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+  }
   .wrapper_bottle {
     width: 68%;
     height: 68%;
@@ -735,6 +747,18 @@ a {
   }
 }
 @media (max-width: 1220px) {
+  body {
+    background-image: url(/water.JPG);
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    overflow: unset;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+  }
   .wrapper_bottle {
     width: 75%;
     height: 75%;
@@ -797,6 +821,18 @@ a {
   }
 }
 @media (max-width: 1080px) {
+  body {
+    background-image: url(/water.JPG);
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    overflow: unset;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+  }
   .wrapper_bottle {
     width: 90%;
     height: 85%;
@@ -859,6 +895,18 @@ a {
   }
 }
 @media (max-width: 920px) {
+  body {
+    background-image: url(/water.JPG);
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    overflow: unset;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+  }
   .wrapper_bottle {
     width: 95%;
     height: 100%;
@@ -937,6 +985,18 @@ a {
 }
 
 @media (max-width: 820px) {
+  body {
+    background-image: url(/water.JPG);
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    overflow: unset;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+  }
   .wrapper_bottle {
     width: 90%;
     height: 10%;
@@ -1038,6 +1098,18 @@ a {
   }
 }
 @media (max-width: 621px) {
+  body {
+    background-image: url(/water.JPG);
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    overflow: unset;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+  }
   .wrapper_bottle {
     width: 90%;
     height: 700px;
@@ -1109,6 +1181,18 @@ a {
   }
 }
 @media (max-width: 532px) {
+  body {
+    background-image: url(/water.JPG);
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    overflow: unset;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+  }
   .wrapper_bottle {
     width: 90%;
     height: 710px;
