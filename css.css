@@ -1212,7 +1212,6 @@ a {
 @media (max-width: 420px) {
   body {
     width: 100%;
-    overflow-x: hidden;
   }
   .bubbles {
     width: 100%;
@@ -1406,7 +1405,6 @@ a {
     z-index: 1;
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
   }
   .background img {
     width: 100%;
