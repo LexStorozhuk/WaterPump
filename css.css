@@ -1180,7 +1180,17 @@ a {
 }
 
 @media (max-width: 420px) {
-  
+  body {
+    max-width: 2000px;
+    max-height: 1024px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border-radius: 2rem;
+    background: navy;
+    overflow: unset;
+    overflow-x:hidden ;
+  }
   .intro {
     max-width: 1914px;
     max-height: 900px;
