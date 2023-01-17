@@ -1211,7 +1211,7 @@ a {
 
 @media (max-width: 420px) {
   body {
-    width: 100%;
+    width: 100vw;
   }
   .bubbles {
     width: 100%;
@@ -1395,9 +1395,8 @@ a {
     }
   }
   .background {
-    width: 100%;
+    width: 100vw;
     max-height: 2020px;
-    background: black;
     display: block;
     position: absolute;
     left: 0px;
@@ -1717,7 +1716,7 @@ a {
     padding: 10px;
   }
   .wrapper_bottle {
-    width: 100%;
+    width: 100vw;
     height: 1550px;
     display: block;
     transition: 1s;
