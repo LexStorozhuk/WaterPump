@@ -8,6 +8,9 @@ body {
   background: navy;
   overflow: hidden;
 }
+@meta {
+
+}
 .nav_bar {
   width: 101%;
   height: 90px;
@@ -1011,7 +1014,7 @@ a {
     padding: 0px 5px 10px 10px;
     transition: 2s;
     margin: 15px 0 0 0;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
   }
   .img_inside_pop {
@@ -1123,7 +1126,7 @@ a {
     padding: 0px 5px 10px 10px;
     transition: 2s;
     margin: 15px 0 0 0;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
   }
 }
@@ -1204,7 +1207,7 @@ a {
     padding: 0px 5px 10px 10px;
     transition: 2s;
     margin: 15px 0 0 0;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
   }
 }
@@ -1678,7 +1681,7 @@ a {
   }
   .number > a {
     color: white;
-    font-size: 13px;
+    font-size: 16px;
     padding: 0px 0 0 0;
   }
   .number {
@@ -1756,7 +1759,7 @@ a {
     padding: 0px 5px 10px 10px;
     transition: 2s;
     margin: 15px 0 0 0;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
   }
   .text_about:hover {
@@ -1872,7 +1875,7 @@ a {
   .pop_about_text {
     color: aliceblue;
     width: 1;
-    font-size: 15px;
+    font-size: 16px;
     padding: 10px;
   }
   .pop_full {
