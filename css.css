@@ -1180,6 +1180,9 @@ a {
 }
 
 @media (max-width: 420px) {
+  * {
+    overflow-x: hidden;
+  }
   .intro {
     max-width: 1914px;
     max-height: 900px;
