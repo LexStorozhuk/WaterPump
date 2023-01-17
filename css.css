@@ -1190,6 +1190,7 @@ a {
     background: navy;
     overflow: unset;
     overflow-x:hidden ;
+    overflow-y: scroll;
   }
   .intro {
     max-width: 1914px;
